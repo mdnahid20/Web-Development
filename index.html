@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Style.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <title>Submit Leave</title>
+  </head>
+  <body>
+    <div class="page">
+      <header id="header">Submit Leave</header>
+      <br />
+      <form id="form1" autocomplete="off">
+
+        <label for="name" >Name:</label>
+        <input type="text" id="name" name = "name"><br>
+        <span id="nameError" class="error">Please enter a valid name</span>
+        <br>
+        
+        <label for="sd">Start date:</label>
+        <input type="date" id="starDay" name="starDay"><br>
+        <span id="starError" class="error">Please enter a valid date</span>
+        <br>
+        
+        <label for="days"># of days:</label>
+        <input type="number" id="days" name="days" min="1" max="7" ><br>
+        <span id="daysError" class="error">Please enter days between 1 to 7</span>
+        <br>
+        
+        <label for="type">Type:</label>
+        <select name="type" id="select">
+            <option value="a"></option>
+            <option value="General">General</option>
+            <option value="Sick">Sick</option>
+            <option value="Accident">Accident</option>
+            <option value="Function">Function</option>
+        </select><br>
+        <span id="selectError" class="error">Please select the option</span>
+        <br>
+        
+        <label for="photos">Photos:</label>
+        <input type="file" name="photo" id="images"><br>
+        <span id="photosError" class="error">Please upload the photo</span>
+        <br>
+
+      </form>
+      <div id="bt">
+        <button id="submitButton">Submit</button>
+        <button id="resetButton">Cancel</button><br /><br /><br />
+      </div>
+    </div>
+    <a href="List_Leave_Page.html" id="newpage">Checkout Leaves</a>
+    <script src = "Submit_leave.js"></script>
+  </body>
+</html>
